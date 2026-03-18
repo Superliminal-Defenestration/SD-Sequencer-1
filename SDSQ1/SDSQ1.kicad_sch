@@ -1232,6 +1232,12 @@
 		(uuid "0dc19034-3a66-46dd-a574-421b6ee965ec")
 	)
 	(junction
+		(at 50.8 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b10f424-b931-4346-85e2-f4278b260fa6")
+	)
+	(junction
 		(at 104.14 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1244,6 +1250,12 @@
 		(uuid "475f87c8-114c-4e9b-8df6-520d230b4a7b")
 	)
 	(junction
+		(at 38.1 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "571270fd-fef1-426b-a3a5-6fa7793e2257")
+	)
+	(junction
 		(at 118.11 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1254,6 +1266,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f12b788-a344-471a-a1cc-35f18e5d9bf1")
+	)
+	(junction
+		(at 38.1 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63b440c7-8cac-43a4-b4f7-80d1f1c0c563")
+	)
+	(junction
+		(at 31.75 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c6b8b5c-1bd3-48a7-8c3a-ec051dbe3f9b")
 	)
 	(junction
 		(at 31.75 50.8)
@@ -1413,6 +1437,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 87.63) (xy 38.1 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5247539d-4a86-4e93-95a1-8ecd7c11975a")
+	)
+	(wire
+		(pts
 			(xy 38.1 46.99) (xy 38.1 43.18)
 		)
 		(stroke
@@ -1483,6 +1517,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 102.87) (xy 31.75 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d67165-ed08-45c1-bc45-52af0c44324b")
+	)
+	(wire
+		(pts
 			(xy 38.1 54.61) (xy 38.1 58.42)
 		)
 		(stroke
@@ -1543,6 +1587,26 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 99.06) (xy 38.1 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ed1f27-262f-4410-9adc-e537f014b545")
+	)
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 38.1 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d889cb86-07a8-4fd9-a5ac-4fe238ec7005")
+	)
+	(wire
+		(pts
 			(xy 38.1 58.42) (xy 50.8 58.42)
 		)
 		(stroke
@@ -1571,6 +1635,26 @@
 		)
 		(uuid "f669db83-32e8-4574-99fe-00deb7946235")
 	)
+	(wire
+		(pts
+			(xy 38.1 102.87) (xy 50.8 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd37a1fd-9801-49d2-b0e7-1d4d3a7f8733")
+	)
+	(wire
+		(pts
+			(xy 38.1 87.63) (xy 48.26 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe13b277-3e3d-4f71-a0a7-24c5005b3836")
+	)
 	(rectangle
 		(start 72.39 34.29)
 		(end 139.7 78.74)
@@ -1582,6 +1666,18 @@
 			(type none)
 		)
 		(uuid bca417d7-eebe-4d3d-85d3-507812d8c207)
+	)
+	(rectangle
+		(start 12.7 81.28)
+		(end 71.12 123.19)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e5fb88b5-a9ff-4d26-9bef-d3176417235f)
 	)
 	(rectangle
 		(start 12.7 36.83)
@@ -1665,6 +1761,16 @@
 		)
 		(uuid "543a01a0-7591-44b9-b94b-b7a930cd6f22")
 	)
+	(text "Snare Drum\n"
+		(exclude_from_sim no)
+		(at 39.624 83.312 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6742ba61-bb2d-411e-8d98-f3e633c1cf6d")
+	)
 	(text "Bridged T Networks (Good for specific frequencies)"
 		(exclude_from_sim no)
 		(at 40.132 35.306 0)
@@ -1674,6 +1780,16 @@
 			)
 		)
 		(uuid "6a7552c4-115e-4c73-8e29-49ba69f85035")
+	)
+	(text "Target freq: 110Hz\nTarget decay time: 100ms\n.07(pi(110)) = Q\nTarget Q = 25"
+		(exclude_from_sim no)
+		(at 35.56 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "74e6394a-16de-4a2a-b5cf-84852dc0a76a")
 	)
 	(text "Roland \"swing\" VCA"
 		(exclude_from_sim no)
@@ -1811,6 +1927,28 @@
 			)
 		)
 	)
+	(global_label "SD"
+		(shape input)
+		(at 53.34 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bb16282-1993-4289-8cfc-18fd089212a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 82.1653 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BD"
 		(shape input)
 		(at 53.34 43.18 90)
@@ -1921,6 +2059,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 50.8 147.32 270)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "126c9412-ade3-47d9-a0ba-3570c39f1d97")
+		(property "Reference" "U2"
+			(at 57.15 146.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 57.15 148.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8854aa54-7199-4d50-ad40-786d9f683d76")
+		)
+		(pin "1"
+			(uuid "5221988e-a78c-4b69-b269-eb86c3d1ae30")
+		)
+		(pin "5"
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e3109")
+		)
+		(pin "3"
+			(uuid "19bda2c1-220e-48a5-86a5-38cfae3f4e38")
+		)
+		(pin "7"
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e387")
+		)
+		(pin "2"
+			(uuid "b1425ec9-1bcc-4c5a-8233-8d390bd72f80")
+		)
+		(pin "6"
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca666")
+		)
+		(pin "8"
+			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b1")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "U2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NPN")
 		(at 91.44 95.25 0)
 		(unit 1)
@@ -2022,6 +2284,144 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 31.75 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e02115c-2cbd-4800-93ac-74ccc7b86d41")
+		(property "Reference" "C9"
+			(at 29.972 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "6nF"
+			(at 29.972 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.7152 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9963283a-d1a1-492a-b5a2-833ef91bc376")
+		)
+		(pin "2"
+			(uuid "7843f30d-98fc-4eda-a918-79edeff0b248")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 38.1 95.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e37dc01-da6c-42a4-bd74-f893491d62c9")
+		(property "Reference" "R10"
+			(at 41.91 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 44.45 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 37.084 94.996 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 38.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fa2dc2c-7a79-4787-92f6-0f1239fc1dcd")
+		)
+		(pin "2"
+			(uuid "69ac85ad-2507-4064-adea-dd30edcd34ca")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 107.95 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2105,7 +2505,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "683"
 			(at 28.702 41.402 0)
 			(effects
 				(font
@@ -2327,6 +2727,73 @@
 			(project ""
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 24.13 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7058db6a-7b71-4630-9572-ded9228690a6")
+		(property "Reference" "#PWR08"
+			(at 17.78 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.32 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 24.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc30bc63-6f1e-4152-94a9-707952b54a47")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2782,7 +3249,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "683"
 			(at 29.972 57.658 0)
 			(effects
 				(font
@@ -2895,6 +3362,130 @@
 			(project "SDSQ1"
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "#PWR4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Opamp_Dual")
+		(at 50.8 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad1c1aca-1660-4941-91f6-6248eeec3f8c")
+		(property "Reference" "U2"
+			(at 57.15 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Opamp_Dual"
+			(at 57.15 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual operational amplifier"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 50.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8854aa54-7199-4d50-ad40-786d9f683d77")
+		)
+		(pin "1"
+			(uuid "682a8f09-5b4c-4454-8a17-757b6780b9d7")
+		)
+		(pin "5"
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310a")
+		)
+		(pin "3"
+			(uuid "2170d25a-64dc-47ca-a1a3-92759cba578f")
+		)
+		(pin "7"
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e388")
+		)
+		(pin "2"
+			(uuid "db632469-d47d-4ebc-8cae-a0bd20ed65f6")
+		)
+		(pin "6"
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca667")
+		)
+		(pin "8"
+			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b2")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3384,6 +3975,94 @@
 			(project "SDSQ1"
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "#PWR3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 50.8 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da462c03-3c71-4bb4-a6cc-b90ebb295f99")
+		(property "Reference" "D4"
+			(at 53.34 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 53.34 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 50.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 50.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 50.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1184204-7f2a-474d-ab7a-bb6490ebabb9")
+		)
+		(pin "2"
+			(uuid "0030a5fd-e723-4da9-9f41-b1383b69f597")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -4086,28 +4765,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "8854aa54-7199-4d50-ad40-786d9f683d76")
+			(uuid "8854aa54-7199-4d50-ad40-786d9f683d78")
 		)
 		(pin "1"
 			(uuid "ff7dd365-5791-43fc-ac4b-560e800d1025")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e3109")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310b")
 		)
 		(pin "3"
 			(uuid "1bce7328-2861-4a34-91e6-c8e2434393c5")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e387")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e389")
 		)
 		(pin "2"
 			(uuid "51329620-e212-419d-b768-8d053b4398a6")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca666")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca668")
 		)
 		(pin "8"
-			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b1")
+			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b3")
 		)
 		(instances
 			(project ""
@@ -4180,6 +4859,142 @@
 			(project ""
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 31.75 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f93fb801-9e03-461d-a628-f4f6a59e87aa")
+		(property "Reference" "C8"
+			(at 28.702 88.392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "6nF"
+			(at 28.702 85.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.7152 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21c449d7-f959-4f7f-9c19-0c6345b1e280")
+		)
+		(pin "2"
+			(uuid "c44be108-36e8-43b8-9dc2-1068f799d365")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 27.94 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa04c1d1-fda3-463d-88ce-af5d263cc8bd")
+		(property "Reference" "R9"
+			(at 27.686 92.202 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500"
+			(at 27.94 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 28.194 94.234 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 27.94 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36b67c49-3717-40d9-ae19-85d2310129f9")
+		)
+		(pin "2"
+			(uuid "616b5a27-19ba-4a43-a278-255227b50969")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "R9")
 					(unit 1)
 				)
 			)
