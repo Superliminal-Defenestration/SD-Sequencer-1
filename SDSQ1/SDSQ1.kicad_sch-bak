@@ -1668,8 +1668,20 @@
 		(uuid bca417d7-eebe-4d3d-85d3-507812d8c207)
 	)
 	(rectangle
+		(start 143.51 13.97)
+		(end 281.94 73.66)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d77b348f-ebad-44b7-a22d-382de63c2a95)
+	)
+	(rectangle
 		(start 12.7 81.28)
-		(end 71.12 123.19)
+		(end 71.12 120.65)
 		(stroke
 			(width 0)
 			(type default)
@@ -1761,7 +1773,7 @@
 		)
 		(uuid "543a01a0-7591-44b9-b94b-b7a930cd6f22")
 	)
-	(text "Bass Drum\n"
+	(text "Snare Drum\n"
 		(exclude_from_sim no)
 		(at 39.624 83.312 0)
 		(effects
@@ -1781,7 +1793,7 @@
 		)
 		(uuid "6a7552c4-115e-4c73-8e29-49ba69f85035")
 	)
-	(text "Target freq: 40Hz\nTarget decay time: 100ms\n.1(pi(40)) = Q\nTarget Q = 12"
+	(text "Target freq: 110Hz\nTarget decay time: 70ms\n.07(pi(110)) = Q\nTarget Q = 25"
 		(exclude_from_sim no)
 		(at 35.56 110.49 0)
 		(effects
@@ -1883,6 +1895,28 @@
 			)
 		)
 	)
+	(global_label "KD_MIX"
+		(shape input)
+		(at 50.8 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3183ed3f-4a33-4a1c-81f2-3f337418805f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.5585 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_MIX"
 		(shape input)
 		(at 134.62 97.79 270)
@@ -1896,6 +1930,28 @@
 		(uuid "437cc9d7-adee-4343-bfbd-fc86361b38db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 134.62 107.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "KD_MIX"
+		(shape input)
+		(at 154.94 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5bb7d553-ab60-4059-a281-0900582fcf8b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.1815 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1983,29 @@
 			)
 		)
 	)
-	(global_label "BD"
+	(global_label "SD_MIX"
+		(shape input)
+		(at 154.94 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "907ee515-b88c-43ab-b75c-4b113b526ec4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.242 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SD"
 		(shape input)
 		(at 53.34 87.63 90)
 		(fields_autoplaced yes)
@@ -1939,7 +2017,7 @@
 		)
 		(uuid "9bb16282-1993-4289-8cfc-18fd089212a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.34 82.1048 90)
+			(at 53.34 82.1653 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,6 +2071,28 @@
 			)
 		)
 	)
+	(global_label "SD_MIX"
+		(shape input)
+		(at 50.8 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3669b11-d1c3-43d4-b20b-d66a5cc56e89")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.498 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:+5V")
 		(at 83.82 38.1 0)
@@ -2002,7 +2102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03ada1c8-9d97-49e6-9e08-386109c489b6")
-		(property "Reference" "#PWR2"
+		(property "Reference" "#PWR02"
 			(at 83.82 41.91 0)
 			(effects
 				(font
@@ -2052,7 +2152,7 @@
 		(instances
 			(project ""
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
-					(reference "#PWR2")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2060,7 +2160,7 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Dual")
-		(at 50.8 147.32 270)
+		(at 50.8 179.07 270)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2069,7 +2169,7 @@
 		(fields_autoplaced yes)
 		(uuid "126c9412-ade3-47d9-a0ba-3570c39f1d97")
 		(property "Reference" "U2"
-			(at 57.15 146.0499 90)
+			(at 57.15 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2078,7 +2178,7 @@
 			)
 		)
 		(property "Value" "Opamp_Dual"
-			(at 57.15 148.5899 90)
+			(at 57.15 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +2187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2096,7 +2196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2105,7 +2205,7 @@
 			)
 		)
 		(property "Description" "Dual operational amplifier"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +2214,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,7 +2223,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,7 +2232,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,7 +2241,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 50.8 147.32 0)
+			(at 50.8 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2300,7 +2400,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "68nF"
 			(at 29.972 102.108 0)
 			(effects
 				(font
@@ -2369,7 +2469,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.1M"
+		(property "Value" "1M"
 			(at 44.45 96.266 0)
 			(effects
 				(font
@@ -2505,7 +2605,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "683"
 			(at 28.702 41.402 0)
 			(effects
 				(font
@@ -3249,7 +3349,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "683"
 			(at 29.972 57.658 0)
 			(effects
 				(font
@@ -3310,7 +3410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a751d95f-42c9-43d9-bb11-f22f77e376e3")
-		(property "Reference" "#PWR4"
+		(property "Reference" "#PWR04"
 			(at 97.79 58.42 0)
 			(effects
 				(font
@@ -3361,7 +3461,7 @@
 		(instances
 			(project "SDSQ1"
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
-					(reference "#PWR4")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3459,28 +3559,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "8854aa54-7199-4d50-ad40-786d9f683d76")
+			(uuid "8854aa54-7199-4d50-ad40-786d9f683d77")
 		)
 		(pin "1"
 			(uuid "682a8f09-5b4c-4454-8a17-757b6780b9d7")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e3109")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310a")
 		)
 		(pin "3"
 			(uuid "2170d25a-64dc-47ca-a1a3-92759cba578f")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e387")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e388")
 		)
 		(pin "2"
 			(uuid "db632469-d47d-4ebc-8cae-a0bd20ed65f6")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca666")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca667")
 		)
 		(pin "8"
-			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b1")
+			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b2")
 		)
 		(instances
 			(project "SDSQ1"
@@ -3726,7 +3826,7 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Dual")
-		(at 31.75 147.32 270)
+		(at 31.75 179.07 270)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3735,7 +3835,7 @@
 		(fields_autoplaced yes)
 		(uuid "c31c236e-6074-4f0a-a3bd-22fe09bc3fe8")
 		(property "Reference" "U1"
-			(at 31.75 139.7 90)
+			(at 31.75 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3743,7 +3843,7 @@
 			)
 		)
 		(property "Value" "Opamp_Dual"
-			(at 31.75 142.24 90)
+			(at 31.75 173.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3751,7 +3851,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3860,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +3869,7 @@
 			)
 		)
 		(property "Description" "Dual operational amplifier"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3878,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3887,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3896,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +3905,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 31.75 147.32 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c574e446-0f62-4f1c-9a88-1d21dd7696e2")
-		(property "Reference" "#PWR1"
+		(property "Reference" "#PWR01"
 			(at 17.78 50.8 0)
 			(effects
 				(font
@@ -3907,7 +4007,7 @@
 		(instances
 			(project ""
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
-					(reference "#PWR1")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3923,7 +4023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0b9c8ab-57a5-496e-9cf3-aabec97b5928")
-		(property "Reference" "#PWR3"
+		(property "Reference" "#PWR03"
 			(at 95.25 64.77 0)
 			(effects
 				(font
@@ -3974,7 +4074,7 @@
 		(instances
 			(project "SDSQ1"
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
-					(reference "#PWR3")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4765,28 +4865,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "8854aa54-7199-4d50-ad40-786d9f683d76")
+			(uuid "8854aa54-7199-4d50-ad40-786d9f683d78")
 		)
 		(pin "1"
 			(uuid "ff7dd365-5791-43fc-ac4b-560e800d1025")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e3109")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310b")
 		)
 		(pin "3"
 			(uuid "1bce7328-2861-4a34-91e6-c8e2434393c5")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e387")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e389")
 		)
 		(pin "2"
 			(uuid "51329620-e212-419d-b768-8d053b4398a6")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca666")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca668")
 		)
 		(pin "8"
-			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b1")
+			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b3")
 		)
 		(instances
 			(project ""
@@ -4882,7 +4982,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "68nF"
 			(at 28.702 85.852 0)
 			(effects
 				(font
@@ -4950,7 +5050,7 @@
 				)
 			)
 		)
-		(property "Value" "4k"
+		(property "Value" "500"
 			(at 27.94 97.282 90)
 			(effects
 				(font
