@@ -184,168 +184,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x02_Socket"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Socket"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Jack-DC"
 			(pin_names
 				(offset 1.016)
@@ -668,6 +506,178 @@
 						)
 					)
 					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2829,16 +2839,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 146.05) (xy 196.85 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ed98671-bedf-4719-9ce3-9477e4d9b5b0")
-	)
-	(wire
-		(pts
 			(xy 212.09 116.84) (xy 212.09 123.19)
 		)
 		(stroke
@@ -3019,6 +3019,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 140.97) (xy 204.47 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0e3c08-2cd6-4685-a4b4-7f1bd0d710e4")
+	)
+	(wire
+		(pts
 			(xy 245.11 90.17) (xy 256.54 90.17)
 		)
 		(stroke
@@ -3076,6 +3086,16 @@
 			(type default)
 		)
 		(uuid "7850db6d-ba31-446b-9ce3-08cf60b2c74e")
+	)
+	(wire
+		(pts
+			(xy 204.47 146.05) (xy 199.39 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8114c2b4-9ffa-48c3-8f5a-05faf0b26cc6")
 	)
 	(wire
 		(pts
@@ -3196,6 +3216,16 @@
 			(type default)
 		)
 		(uuid "9faa19ed-bef3-46cc-9092-9c2345d8ea3c")
+	)
+	(wire
+		(pts
+			(xy 196.85 140.97) (xy 196.85 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0de4968-e900-4292-a269-26980dda3cf4")
 	)
 	(wire
 		(pts
@@ -4568,7 +4598,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 151.13 160.02 0)
 			(effects
 				(font
@@ -4656,7 +4686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 50.8 184.15 0)
 			(effects
 				(font
@@ -4780,7 +4810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
 			(at 154.94 95.25 0)
 			(effects
 				(font
@@ -4880,7 +4910,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 169.926 99.314 90)
 			(effects
 				(font
@@ -4948,7 +4978,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 163.83 42.672 90)
 			(effects
 				(font
@@ -5015,7 +5045,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 237.49 89.2048 0)
 			(effects
 				(font
@@ -5084,7 +5114,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 102.87 0)
 			(effects
 				(font
@@ -5217,7 +5247,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 219.71 90.17 0)
 			(effects
 				(font
@@ -5305,7 +5335,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 224.536 101.854 90)
 			(effects
 				(font
@@ -5373,7 +5403,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
 			(at 109.22 144.526 0)
 			(effects
 				(font
@@ -5441,7 +5471,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 168.91 94.2848 0)
 			(effects
 				(font
@@ -5510,7 +5540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 37.084 94.996 90)
 			(effects
 				(font
@@ -5577,7 +5607,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 111.76 108.2548 0)
 			(effects
 				(font
@@ -5726,7 +5756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 50.8 137.16 0)
 			(effects
 				(font
@@ -5850,7 +5880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 246.126 94.234 90)
 			(effects
 				(font
@@ -5919,7 +5949,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 50.8 0)
 			(effects
 				(font
@@ -5987,7 +6017,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 207.01 44.45 0)
 			(effects
 				(font
@@ -6111,7 +6141,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
 			(at 255.27 41.91 0)
 			(effects
 				(font
@@ -6181,7 +6211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 111.76 119.38 0)
 			(effects
 				(font
@@ -6335,7 +6365,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 50.8 62.23 0)
 			(effects
 				(font
@@ -6488,7 +6518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 37.084 136.906 90)
 			(effects
 				(font
@@ -6760,7 +6790,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 37.084 50.546 90)
 			(effects
 				(font
@@ -6895,7 +6925,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 50.8 148.59 0)
 			(effects
 				(font
@@ -6983,7 +7013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 126.746 94.234 90)
 			(effects
 				(font
@@ -7050,7 +7080,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 176.53 96.2152 0)
 			(effects
 				(font
@@ -7119,7 +7149,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 99.06 49.8348 0)
 			(effects
 				(font
@@ -7254,7 +7284,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 105.1052 99.06 0)
 			(effects
 				(font
@@ -7322,7 +7352,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 107.95 90.17 0)
 			(effects
 				(font
@@ -7476,7 +7506,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 175.5648 87.63 0)
 			(effects
 				(font
@@ -7546,7 +7576,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 73.66 184.15 0)
 			(effects
 				(font
@@ -7613,22 +7643,22 @@
 			(uuid "2a43fe04-1bc5-4d21-a379-cb6bf94fd7a1")
 		)
 		(pin "1"
-			(uuid "5221988e-a78c-4b69-b269-eb86c3d1ae30")
+			(uuid "5221988e-a78c-4b69-b269-eb86c3d1ae31")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e3109")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310b")
 		)
 		(pin "3"
-			(uuid "19bda2c1-220e-48a5-86a5-38cfae3f4e38")
+			(uuid "19bda2c1-220e-48a5-86a5-38cfae3f4e39")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e387")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e389")
 		)
 		(pin "2"
-			(uuid "b1425ec9-1bcc-4c5a-8233-8d390bd72f80")
+			(uuid "b1425ec9-1bcc-4c5a-8233-8d390bd72f81")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca666")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca668")
 		)
 		(pin "8"
 			(uuid "fbaaf059-1b63-47a6-915c-1b52be712ccf")
@@ -7734,7 +7764,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 163.83 33.782 90)
 			(effects
 				(font
@@ -7777,6 +7807,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 201.93 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98f0dbef-2940-4db5-a4b7-2ad5f563f1a2")
+		(property "Reference" "BT1"
+			(at 211.074 141.224 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 211.074 143.764 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 200.406 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.406 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 201.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5724fef0-7e26-486b-91a3-87dd0a20caee")
+		)
+		(pin "1"
+			(uuid "89fe3aa7-51af-4325-a635-560a7ebe3de3")
+		)
+		(instances
+			(project ""
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 104.14 54.61 0)
 		(unit 1)
@@ -7803,7 +7900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 105.156 54.864 90)
 			(effects
 				(font
@@ -7870,7 +7967,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 249.174 145.034 90)
 			(effects
 				(font
@@ -7939,7 +8036,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 58.42 0)
 			(effects
 				(font
@@ -8006,7 +8103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 223.52 108.2548 0)
 			(effects
 				(font
@@ -8141,7 +8238,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 163.83 51.562 90)
 			(effects
 				(font
@@ -8211,7 +8308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 50.8 95.25 0)
 			(effects
 				(font
@@ -8281,19 +8378,19 @@
 			(uuid "682a8f09-5b4c-4454-8a17-757b6780b9d7")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310b")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310c")
 		)
 		(pin "3"
 			(uuid "2170d25a-64dc-47ca-a1a3-92759cba578f")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e389")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e38a")
 		)
 		(pin "2"
 			(uuid "db632469-d47d-4ebc-8cae-a0bd20ed65f6")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca668")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca669")
 		)
 		(pin "8"
 			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b4")
@@ -8400,7 +8497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 192.786 91.694 90)
 			(effects
 				(font
@@ -8733,7 +8830,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 144.78 0)
 			(effects
 				(font
@@ -8803,7 +8900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
 			(at 22.86 50.8 0)
 			(effects
 				(font
@@ -8901,7 +8998,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 163.83 24.892 90)
 			(effects
 				(font
@@ -8969,7 +9066,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 31.75 184.15 0)
 			(effects
 				(font
@@ -9291,7 +9388,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 216.8652 99.06 0)
 			(effects
 				(font
@@ -9424,7 +9521,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 28.194 136.144 90)
 			(effects
 				(font
@@ -9492,7 +9589,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 151.13 142.24 0)
 			(effects
 				(font
@@ -9579,7 +9676,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 137.16 0)
 			(effects
 				(font
@@ -9713,7 +9810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 207.264 59.944 90)
 			(effects
 				(font
@@ -9781,7 +9878,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 264.16 92.71 0)
 			(effects
 				(font
@@ -9851,19 +9948,19 @@
 			(uuid "129264b9-e94c-4346-8816-65cac9e0c251")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310c")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310d")
 		)
 		(pin "3"
 			(uuid "5b5dfe98-ca37-4cf3-ad0b-5d94283602e7")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e38a")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e38b")
 		)
 		(pin "2"
 			(uuid "2d5bf755-1a02-4bb6-964c-4382d259f611")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca669")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca66a")
 		)
 		(pin "8"
 			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b5")
@@ -9905,7 +10002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 50.8 106.68 0)
 			(effects
 				(font
@@ -10032,76 +10129,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 196.85 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dba8b20e-fa33-4dc4-bca1-91e3ac70bec4")
-		(property "Reference" "J2"
-			(at 200.66 140.3349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 200.66 142.8749 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 196.85 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2cbb9f80-2c55-47ec-a93a-f2e94a394f47")
-		)
-		(pin "1"
-			(uuid "329802f9-e230-44c4-ad74-972ac459ec37")
-		)
-		(instances
-			(project ""
-				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Opamp_Dual")
 		(at 118.11 55.88 270)
 		(unit 2)
@@ -10129,7 +10156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 118.11 55.88 0)
 			(effects
 				(font
@@ -10318,7 +10345,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 213.106 113.284 90)
 			(effects
 				(font
@@ -10455,7 +10482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
 			(at 223.52 119.38 0)
 			(effects
 				(font
@@ -10541,7 +10568,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 106.934 63.754 90)
 			(effects
 				(font
@@ -10611,7 +10638,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 84.836 42.164 90)
 			(effects
 				(font
@@ -10654,6 +10681,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 252.73 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eba1b3ac-477e-462b-8c38-c5f3468dbcd7")
+		(property "Reference" "#PWR045"
+			(at 252.73 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.158 143.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 252.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9ea76ae-20f1-48a1-aec4-e4201b586b10")
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 134.62 93.98 180)
 		(unit 1)
@@ -10681,7 +10773,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 133.6548 90.17 0)
 			(effects
 				(font
@@ -10751,7 +10843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 112.776 101.854 90)
 			(effects
 				(font
@@ -10819,7 +10911,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 163.83 60.452 90)
 			(effects
 				(font
@@ -10889,7 +10981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 119.126 67.564 90)
 			(effects
 				(font
@@ -10956,7 +11048,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 28.194 49.784 90)
 			(effects
 				(font
@@ -11023,7 +11115,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 207.264 53.594 90)
 			(effects
 				(font
@@ -11093,7 +11185,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 50.8 50.8 0)
 			(effects
 				(font
@@ -11163,19 +11255,19 @@
 			(uuid "ff7dd365-5791-43fc-ac4b-560e800d1025")
 		)
 		(pin "5"
-			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310d")
+			(uuid "3b134fad-e5cc-474d-b7a3-859c370e310e")
 		)
 		(pin "3"
 			(uuid "1bce7328-2861-4a34-91e6-c8e2434393c5")
 		)
 		(pin "7"
-			(uuid "cf142275-3b38-4b2f-99fd-102deb93e38b")
+			(uuid "cf142275-3b38-4b2f-99fd-102deb93e38c")
 		)
 		(pin "2"
 			(uuid "51329620-e212-419d-b768-8d053b4398a6")
 		)
 		(pin "6"
-			(uuid "32e62dd8-a755-4c79-9a59-79f824bca66a")
+			(uuid "32e62dd8-a755-4c79-9a59-79f824bca66b")
 		)
 		(pin "8"
 			(uuid "d1e13507-1286-452b-8aa1-cece67ad56b6")
@@ -11217,7 +11309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92S"
 			(at 266.7 95.25 0)
 			(effects
 				(font
@@ -11314,7 +11406,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 125.73 89.2048 0)
 			(effects
 				(font
@@ -11383,7 +11475,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 32.7152 95.25 0)
 			(effects
 				(font
@@ -11450,7 +11542,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 28.194 94.234 90)
 			(effects
 				(font
@@ -11487,6 +11579,72 @@
 			(project "SDSQ1"
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 191.77 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc124a14-3e4e-4e3f-a8b3-236707dbc591")
+		(property "Reference" "#PWR046"
+			(at 191.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 191.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 191.77 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53f073e8-1099-4b42-a93a-b9431adece52")
+		)
+		(instances
+			(project ""
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -11584,7 +11742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_Push_1P2T_Vertical_E-Switch_800UDP8P1A1M6"
 			(at 191.77 58.42 0)
 			(effects
 				(font
@@ -11655,7 +11813,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical"
 			(at 172.974 94.234 90)
 			(effects
 				(font
@@ -11760,6 +11918,44 @@
 				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
 					(reference "#PWR014")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 302.26 129.54)
+		(size 161.29 68.58)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0496ae32-e615-4d42-b6f1-3c03dea8fe14")
+		(property "Sheetname" "sequencer"
+			(at 302.26 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "seq.kicad_sch"
+			(at 302.26 198.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SDSQ1"
+				(path "/a2ab0216-299b-46d3-9c32-38ad2aafacff"
+					(page "2")
 				)
 			)
 		)
